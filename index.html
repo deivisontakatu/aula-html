@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação dos caracteres da página -->
+    <meta charset="utf-8">
+
+    <!-- Define o título exibido na aba do navegador -->
+    <title>Meu Blog – Primeiro Post</title>
+
+    <!-- Estilos utilizados na página -->
+    <style>
+
+        /* Centraliza o título principal */
+        h1 {
+            text-align: center;
+        }
+
+        /* Alinha o subtítulo à esquerda */
+        h2 {
+            text-align: left;
+        }
+
+        /* Alinha a seção à direita */
+        h3 {
+            text-align: right;
+        }
+
+        /* Sublinhado utilizando CSS */
+        .sublinhado {
+            text-decoration: underline;
+        }
+
+        /* Texto riscado utilizando CSS */
+        .riscado {
+            text-decoration: line-through;
+        }
+
+        /* Texto centralizado */
+        .center {
+            text-align: center;
+        }
+
+        /* Parágrafo com texto justificado */
+        .justificado {
+            text-align: justify;
+        }
+
+        /* Texto azul e com tamanho maior */
+        .texto-estilizado {
+            color: blue;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- =====================================================
+         CABEÇALHO
+         Contém os principais títulos da página
+         ===================================================== -->
+    <header>
+
+        <!-- Título principal centralizado -->
+        <h1>Título principal (H1) – centralizado</h1>
+
+        <!-- Subtítulo alinhado à esquerda -->
+        <h2>Subtítulo (H2) – alinhado à esquerda</h2>
+
+        <!-- Seção alinhada à direita -->
+        <h3>Seção (H3) – alinhado à direita</h3>
+
+        <!-- Título de nível 4 -->
+        <h4>Subseção (H4)</h4>
+
+        <!-- Título de nível 5 -->
+        <h5>Detalhe (H5)</h5>
+
+        <!-- Título de nível 6 -->
+        <h6>Nota (H6)</h6>
+
+    </header>
+
+
+    <!-- =====================================================
+         MENU DE NAVEGAÇÃO
+         Contém links internos para partes da página
+         ===================================================== -->
+    <nav>
+
+        <p>
+            <a href="#posts">Posts</a> |
+            <a href="#lateral">Lateral</a> |
+            <a href="#rodape">Rodapé</a>
+        </p>
+
+    </nav>
+
+
+    <!-- =====================================================
+         SEÇÃO DE POSTS
+         ===================================================== -->
+    <section id="posts">
+
+        <!-- Artigo principal -->
+        <article class="post">
+
+            <!-- Cabeçalho do artigo -->
+            <header>
+
+                <h2>Meu Blog – Primeiro Post</h2>
+
+            </header>
+
+
+            <!-- =================================================
+                 PRIMEIRO PARÁGRAFO FORMATADO
+                 ================================================= -->
+            <p>
+
+                Este é um parágrafo com
+                <strong>negrito</strong>,
+                <em>itálico</em>,
+                <span class="sublinhado">sublinhado</span>,
+                <span class="riscado">riscado</span>,
+                além de exemplos de
+                <sub>subscrito</sub>
+                e
+                <sup>sobrescrito</sup>.
+
+            </p>
+
+
+            <!-- =================================================
+                 TEXTO ESTILIZADO COM CSS INLINE
+                 ================================================= -->
+            <p style="color: blue; font-size: 20px;">
+
+                Exemplo de texto estilizado
+                (substituindo a tag &lt;font&gt; obsoleta).
+
+            </p>
+
+
+            <!-- =================================================
+                 TEXTO CENTRALIZADO
+                 ================================================= -->
+            <div class="center">
+
+                Este texto está centralizado.
+
+            </div>
+
+
+            <!-- =================================================
+                 PARÁGRAFO JUSTIFICADO COM QUEBRA DE LINHA
+                 ================================================= -->
+            <p class="justificado">
+
+                Parágrafo justificado para demonstrar alinhamento.
+                Este é um texto utilizado para demonstrar como o
+                conteúdo pode ser organizado dentro de uma página HTML.
+                A utilização do alinhamento justificado distribui o
+                conteúdo ao longo da largura disponível.
+
+                <br>
+
+                Esta é a linha seguinte após a utilização da tag
+                &lt;br&gt;.
+
+            </p>
+
+        </article>
+
+    </section>
+
+
+    <!-- =====================================================
+         BARRA LATERAL
+         ===================================================== -->
+    <aside id="lateral">
+
+        <h3>Conteúdo Relacionado</h3>
+
+        <p>
+            Links, anúncios, ou notas que não fazem parte
+            do fluxo principal do artigo.
+        </p>
+
+    </aside>
+
+
+    <!-- =====================================================
+         RODAPÉ
+         ===================================================== -->
+    <footer id="rodape">
+
+        <p>
+            © 2025 – Exemplo didático de HTML da Aula
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
