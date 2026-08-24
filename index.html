@@ -2,91 +2,53 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Define a codificação dos caracteres da página -->
     <meta charset="utf-8">
 
-    <!-- Define o título exibido na aba do navegador -->
     <title>Meu Blog – Primeiro Post</title>
-
-    <!-- Estilos utilizados na página -->
-    <style>
-
-        /* Centraliza o título principal */
-        h1 {
-            text-align: center;
-        }
-
-        /* Alinha o subtítulo à esquerda */
-        h2 {
-            text-align: left;
-        }
-
-        /* Alinha a seção à direita */
-        h3 {
-            text-align: right;
-        }
-
-        /* Sublinhado utilizando CSS */
-        .sublinhado {
-            text-decoration: underline;
-        }
-
-        /* Texto riscado utilizando CSS */
-        .riscado {
-            text-decoration: line-through;
-        }
-
-        /* Texto centralizado */
-        .center {
-            text-align: center;
-        }
-
-        /* Parágrafo com texto justificado */
-        .justificado {
-            text-align: justify;
-        }
-
-        /* Texto azul e com tamanho maior */
-        .texto-estilizado {
-            color: blue;
-            font-size: 20px;
-        }
-
-    </style>
 </head>
 
 <body>
 
     <!-- =====================================================
          CABEÇALHO
-         Contém os principais títulos da página
          ===================================================== -->
     <header>
 
-        <!-- Título principal centralizado -->
-        <h1>Título principal (H1) – centralizado</h1>
+        <!-- Título centralizado -->
+        <h1 align="center">
+            Título principal (H1) – centralizado
+        </h1>
 
         <!-- Subtítulo alinhado à esquerda -->
-        <h2>Subtítulo (H2) – alinhado à esquerda</h2>
+        <h2 align="left">
+            Subtítulo (H2) – alinhado à esquerda
+        </h2>
 
         <!-- Seção alinhada à direita -->
-        <h3>Seção (H3) – alinhado à direita</h3>
+        <h3 align="right">
+            Seção (H3) – alinhado à direita
+        </h3>
 
         <!-- Título de nível 4 -->
-        <h4>Subseção (H4)</h4>
+        <h4>
+            Subseção (H4)
+        </h4>
 
         <!-- Título de nível 5 -->
-        <h5>Detalhe (H5)</h5>
+        <h5>
+            Detalhe (H5)
+        </h5>
 
         <!-- Título de nível 6 -->
-        <h6>Nota (H6)</h6>
+        <h6>
+            Nota (H6)
+        </h6>
 
     </header>
 
 
     <!-- =====================================================
          MENU DE NAVEGAÇÃO
-         Contém links internos para partes da página
          ===================================================== -->
     <nav>
 
@@ -105,26 +67,28 @@
     <section id="posts">
 
         <!-- Artigo principal -->
-        <article class="post">
+        <article>
 
             <!-- Cabeçalho do artigo -->
             <header>
 
-                <h2>Meu Blog – Primeiro Post</h2>
+                <h2>
+                    Meu Blog – Primeiro Post
+                </h2>
 
             </header>
 
 
             <!-- =================================================
-                 PRIMEIRO PARÁGRAFO FORMATADO
+                 FORMATAÇÃO DE TEXTO
                  ================================================= -->
             <p>
 
                 Este é um parágrafo com
                 <strong>negrito</strong>,
                 <em>itálico</em>,
-                <span class="sublinhado">sublinhado</span>,
-                <span class="riscado">riscado</span>,
+                <u>sublinhado</u>,
+                <s>riscado</s>,
                 além de exemplos de
                 <sub>subscrito</sub>
                 e
@@ -134,12 +98,16 @@
 
 
             <!-- =================================================
-                 TEXTO ESTILIZADO COM CSS INLINE
+                 TEXTO COLORIDO E MAIOR
                  ================================================= -->
-            <p style="color: blue; font-size: 20px;">
+            <p>
 
-                Exemplo de texto estilizado
-                (substituindo a tag &lt;font&gt; obsoleta).
+                <font color="blue" size="5">
+
+                    Exemplo de texto estilizado
+                    utilizando HTML.
+
+                </font>
 
             </p>
 
@@ -147,17 +115,17 @@
             <!-- =================================================
                  TEXTO CENTRALIZADO
                  ================================================= -->
-            <div class="center">
+            <p align="center">
 
                 Este texto está centralizado.
 
-            </div>
+            </p>
 
 
             <!-- =================================================
-                 PARÁGRAFO JUSTIFICADO COM QUEBRA DE LINHA
+                 PARÁGRAFO JUSTIFICADO
                  ================================================= -->
-            <p class="justificado">
+            <p align="justify">
 
                 Parágrafo justificado para demonstrar alinhamento.
                 Este é um texto utilizado para demonstrar como o
@@ -182,11 +150,15 @@
          ===================================================== -->
     <aside id="lateral">
 
-        <h3>Conteúdo Relacionado</h3>
+        <h3 align="right">
+            Conteúdo Relacionado
+        </h3>
 
-        <p>
+        <p align="left">
+
             Links, anúncios, ou notas que não fazem parte
             do fluxo principal do artigo.
+
         </p>
 
     </aside>
@@ -197,8 +169,10 @@
          ===================================================== -->
     <footer id="rodape">
 
-        <p>
+        <p align="center">
+
             © 2025 – Exemplo didático de HTML da Aula
+
         </p>
 
     </footer>
