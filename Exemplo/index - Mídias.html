@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Aula 04 - Mídias em HTML</title>
+</head>
+
+<body>
+
+    <table width="100%" border="1" cellspacing="0" cellpadding="5">
+
+        <!-- TÍTULO -->
+        <tr bgcolor="#e6e6e6">
+            <td colspan="4" align="center">
+                <strong>Aula 04 - Mídias em HTML</strong>
+            </td>
+        </tr>
+
+
+        <!-- PRIMEIRA LINHA -->
+        <tr valign="top">
+
+            <!-- IMAGENS -->
+            <td width="25%" height="200">
+
+                <strong>Imagens</strong>
+
+                <br><br>
+
+                <img src="imagem1.jpg"
+                     alt="Imagem 1"
+                     width="80">
+
+                <br><br>
+
+                <img src="imagem2.jpg"
+                     alt="Imagem 2"
+                     width="80">
+
+                <br><br>
+
+                <img src="imagem3.jpg"
+                     alt="Imagem 3"
+                     width="80">
+
+            </td>
+
+
+            <!-- VÍDEO -->
+            <td width="25%">
+
+                <strong>Vídeo</strong>
+
+                <br><br>
+
+                <video width="100" height="150" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeo.
+                </video>
+
+            </td>
+
+
+            <!-- ÁUDIO -->
+            <td width="25%">
+
+                <strong>Áudio</strong>
+
+                <br><br>
+
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Seu navegador não suporta áudio.
+                </audio>
+
+            </td>
+
+
+            <!-- FORMULÁRIO -->
+            <td width="25%">
+
+                <strong>Formulário</strong>
+
+                <form>
+
+                    <label for="nome">
+                        Nome:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                    >
+
+                    <br><br>
+
+
+                    <label for="email">
+                        E-mail:
+                    </label>
+
+                    <br>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                    >
+
+                    <br><br>
+
+
+                    <label for="mensagem">
+                        Mensagem:
+                    </label>
+
+                    <br>
+
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="3"
+                    ></textarea>
+
+                    <br><br>
+
+                    <button type="submit">
+                        Enviar
+                    </button>
+
+                </form>
+
+            </td>
+
+        </tr>
+
+
+        <!-- SEGUNDA LINHA -->
+        <tr valign="top">
+
+            <!-- LINKS -->
+            <td height="200">
+
+                <strong>Links</strong>
+
+                <br><br>
+
+                <a href="https://www.google.com">
+                    Google
+                </a>
+
+                <br>
+
+                <a href="https://www.google.com">
+                    <img
+                        src="imagem-link.jpg"
+                        alt="Google"
+                        width="70"
+                    >
+                </a>
+
+            </td>
+
+
+            <!-- LISTAS -->
+            <td>
+
+                <strong>Listas</strong>
+
+                <br><br>
+
+                <ol>
+                    <li>Primeiro item</li>
+                    <li>Segundo item</li>
+                </ol>
+
+                <ul>
+                    <li>Item A</li>
+                    <li>Item B</li>
+                </ul>
+
+            </td>
+
+
+            <!-- TABELAS -->
+            <td>
+
+                <strong>Tabelas</strong>
+
+                <br><br>
+
+                <table border="1" cellspacing="0" cellpadding="3">
+
+                    <tr>
+                        <th>Coluna 1</th>
+                        <th>Coluna 2</th>
+                        <th>Coluna 3</th>
+                    </tr>
+
+                    <tr>
+                        <td>Linha 1</td>
+                        <td>Dado 1</td>
+                        <td>Dado 2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Linha 2</td>
+                        <td>Dado 3</td>
+                        <td>Dado 4</td>
+                    </tr>
+
+                </table>
+
+            </td>
+
+
+            <!-- IDENTIFICADORES E CLASSES -->
+            <td>
+
+                <strong>Identificadores e Classes</strong>
+
+                <br><br>
+
+                <p id="paragrafo">
+                    Parágrafo com <strong>id</strong>.
+                </p>
+
+                <p>
+                    Parágrafo com
+                    <span class="destaque">
+                        classe "destaque"
+                    </span>.
+                </p>
+
+                <div>
+
+                    <h4>Div Contêiner</h4>
+
+                    <p>
+                        Parágrafo dentro do contêiner.
+                    </p>
+
+                </div>
+
+            </td>
+
+        </tr>
+
+
+        <!-- RODAPÉ -->
+        <tr bgcolor="#e6e6e6">
+
+            <td colspan="4" align="center">
+
+                © Exemplo didático de HTML
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
