@@ -447,70 +447,8 @@ Também podemos informar as dimensões da imagem.
 
 Definir as dimensões ajuda o navegador a reservar espaço para a imagem durante o carregamento.
 
----
 
-# 1️⃣1️⃣ URL e Canonical 🔗
-
-URLs claras ajudam usuários a compreender o conteúdo da página.
-
-### ❌ URL pouco descritiva
-
-```text
-site.com/pagina?id=123
-```
-
-### ✅ URL mais descritiva
-
-```text
-site.com/cursos/html
-```
-
-## 🔗 Canonical
-
-A tag `canonical` indica a URL principal de uma página.
-
-```html
-<link
-    rel="canonical"
-    href="https://exemplo.com/cursos/html"
->
-```
-
-Ela pode ser utilizada quando existem diferentes URLs que apresentam conteúdo igual ou muito semelhante.
-
----
-
-# 1️⃣2️⃣ Indexação e Robots 🤖
-
-Por padrão, uma página pode ser disponibilizada para indexação pelos mecanismos de busca.
-
-Podemos utilizar a meta tag `robots` para fornecer instruções relacionadas à indexação.
-
-### 📌 Indexação
-
-```html
-<meta
-    name="robots"
-    content="index, follow"
->
-```
-
-### 🚫 Não indexar
-
-```html
-<meta
-    name="robots"
-    content="noindex"
->
-```
-
-O `noindex` pode ser utilizado em páginas que não devem aparecer nos resultados de pesquisa.
-
-> 💡 A utilização de `noindex` deve ser feita com cuidado, pois impede a página de ser indexada.
-
----
-
-# 🧪 1️⃣3️⃣ Exemplo completo
+# 🧪 1️⃣1️⃣ Exemplo completo
 
 ```html
 <!DOCTYPE html>
@@ -659,37 +597,5 @@ O `noindex` pode ser utilizado em páginas que não devem aparecer nos resultado
 | 🔗 Criar links descritivos | `<a href="">` |
 | 🖼️ Descrever imagens | `alt` |
 | 📐 Definir dimensões | `width`, `height` |
-| 🔗 Definir URL principal | `canonical` |
-| 🤖 Controlar indexação | `robots` |
 
 ---
-
-# 🚀 Exercício
-
-Crie um pequeno site utilizando **HTML e CSS** sobre um tema de sua escolha.
-
-O site deverá possuir pelo menos **três páginas interligadas**, utilizando uma estrutura de navegação clara.
-
-Durante o desenvolvimento, aplique as boas práticas de SEO apresentadas neste tutorial, utilizando título, descrição, idioma, viewport, headings, HTML semântico, links internos e imagens com texto alternativo.
-
-Após finalizar uma primeira versão do site, utilize uma **ferramenta de análise de PageRank ou SEO** para avaliar a página. Registre o resultado e identifique pontos que podem ser melhorados.
-
-Em seguida, faça melhorias no site com base na análise realizada e execute novamente a ferramenta. Compare os resultados **antes e depois das alterações**.
-
-### 📋 Entrega
-
-O grupo deverá entregar:
-
-- [ ] Arquivos HTML
-- [ ] Arquivos CSS
-- [ ] Imagens utilizadas
-- [ ] Estrutura de navegação entre as páginas
-- [ ] Resultado da primeira análise
-- [ ] Melhorias realizadas
-- [ ] Resultado da segunda análise
-- [ ] Comparação entre os resultados
-- [ ] Breve conclusão sobre as melhorias realizadas
-
-### 🎯 Desafio
-
-> **O objetivo não é apenas criar um site bonito. É criar uma página bem estruturada, acessível e compreensível para usuários e mecanismos de busca.**
